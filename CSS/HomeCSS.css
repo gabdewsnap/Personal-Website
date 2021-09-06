@@ -1,0 +1,302 @@
+/* CSS FILE FOR GABRIELLE'S PORTFOLIO */
+
+* {
+	box-sizing: border-box; /* makes it so that padding and margin is included in overall height and width of divs */
+	padding: 0;
+	margin: 0;
+}
+
+section{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 1250px;
+	height: 100%;
+	margin: 0 auto;
+	align-items: center;
+	position: relative;
+	margin-top: 75px;
+}
+.spacer{
+	width: 100%;
+	height: 100%;
+	max-height: 100px;
+}
+
+#header{
+	display: flex;
+	align-items: center;
+	justify-content: flex-end; /* y axis */
+	background-color:  white;
+	height: auto;
+	height: 70px;
+	width: 100%;
+	padding-right: 20px; 
+	position: relative; /*Makes is so that it sticks to the top even when scrolling */
+}
+
+#header ul{ /*targets the unordered list in the .header class */
+	margin: 0 auto;
+	height: auto;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	width: 100%;
+	max-width: 600px;
+	list-style: none; /* gets rid of the bulleted */
+}
+
+#header a{
+	display: block; /*Makes it so that the whole link area can be clicked on and not just the text. */
+	text-decoration: none; /* gets rid of underline that shows on links */
+	color: black;
+	padding-right: 15px;
+	font-family: 'BenchNine', sans-serif;
+	font-size: 24px;
+	position: relative; /* makes it so that kid thingies that are positioned absolute are posistioned 
+						absolute to this one and not the entire web page */
+}
+
+
+#header img{
+	padding-top: 3px;
+}
+
+a.active{ /*makes active window bolder to indicate which one you're on*/
+	font-weight: bolder;
+}
+
+.Name{
+	width:auto;
+	height: auto;
+	font-family: 'BenchNine', sans-serif;
+	font-size: 48px;
+	color: #E93E3E;
+}
+.aboutMe{
+	height: auto;
+	display: flex;
+	text-align: center;
+	flex-direction: column;
+	width: 100%;
+	max-width: 550px;
+	height: 150px;
+	padding: 25px;
+
+}
+.aboutMe p{
+	text-align: left;
+	font-family: 'Glegoo', sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+	z-index: 1; 
+
+}
+.aboutMe img{
+	position: absolute;
+	width: 400px;
+	height: 250px;
+	margin-left: -20px;
+}
+
+.aboutMe h1{
+	text-align: left;
+	font-family: 'Glegoo', sans-serif;
+	font-weight: normal;
+	font-size: 30px;
+}
+
+span h1{ /* Underline for Hello or h1. */
+	border-bottom: 2px solid #E93E3E;
+	width: 85px;
+	line-height: 40px;
+	margin-bottom: 10px;
+}
+
+.container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: auto; 
+	width: auto;
+	padding: 25px;
+}
+.container p{
+	top: -142px;
+	position: absolute;
+}
+
+
+.image{
+	border-radius: 50%;
+	width: 500px;
+	height: 500px;
+	margin:  auto; 
+	position: relative;
+	z-index: 1;
+	border: 1px solid black;
+
+}
+
+#borderleft{ /*left and right of black border lines */
+	position: absolute;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	height: 480px;
+	width: 450px;
+	z-index: 0;
+	top: 35px;
+}
+
+#bordertop{ /*top and bottom of black border lines */
+	position: absolute;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	height: 450px;
+	width: 480px;
+	z-index: 0;
+	top: 50px;
+}
+
+#babycircles{
+	display: flex;
+	justify-content: space-between;
+	width: 300px;
+	margin-top: 5px;
+	align-items: center;
+
+}
+
+.instagram, .twitch{
+	border-radius: 50%;
+	width: 50px;
+	height: 50px; 
+}
+
+.discord{
+	border-radius: 50%;
+	width: 60px;
+	height: 60px;
+}
+.twitter{
+	border-radius: 50%;
+	width: 55px;
+	height: 55px;
+}
+
+
+
+#footer{
+	font-size: 15px;
+	padding-right: 2px;
+	margin: 0 auto;
+	font-family: 'BenchNine', sans-serif;
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+
+
+@media (max-width: 850px){
+	#header a{
+		display: none;
+	}
+
+	#header{
+		display: flex;
+		justify-content: center;
+	}
+
+	#header img{
+		padding-top: 10px;
+		padding-left: 15px;
+
+	}
+	#footer{
+		justify-content: center;
+	}
+
+	.container p{
+		display:none;
+	}
+
+	.container{
+		padding: 0;
+	}
+}
+
+
+@media (max-width: 850px){
+	section{
+		flex-direction: column;
+		bottom: 0px;
+	}
+
+	.container{
+		padding: 0;
+	}
+
+	.aboutMe{
+		width: 400px;
+	}
+	
+	#borderleft{ /*left and right of black border lines */
+		top: 15px;
+	}
+
+	#bordertop{ /*top and bottom of black border lines */
+		top: 30px;
+	}
+}
+
+@media (min-width: 850px){
+	#header p{
+		display:none;
+	}
+}
+
+@media (max-device-width: 500px), (max-width: 550px){
+
+	.image{
+		border-radius: 50%;
+		width: 400px;
+		height: 400px;
+		margin:  auto; 
+		position: relative;
+		z-index: 1;
+	}
+
+	#borderleft{ /*left and right of black border lines */
+		position: absolute;
+		border-left: 1px solid black;
+		border-right: 1px solid black;
+		height: 380px;
+		width: 350px;
+		z-index: 0;
+		top: 20px;
+	}
+
+	#bordertop{ /*top and bottom of black border lines */
+		position: absolute;
+		border-top: 1px solid black;
+		border-bottom: 1px solid black;
+		height: 350px;
+		width: 380px;
+		z-index: 0;
+		top: 35px
+	}
+
+	.container{
+		padding: 0;
+	}
+
+	.aboutMe{
+		width: 400px;
+	}
+
+	section{
+		margin-top: 25px;
+	}
+}

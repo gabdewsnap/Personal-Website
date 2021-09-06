@@ -1,0 +1,176 @@
+/* CSS FILE FOR GABRIELLE'S PORTFOLIO */
+
+* {
+	box-sizing: border-box; /* makes it so that padding and margin is included in overall height and width of divs */
+	padding: 0;
+	margin: 0;
+}
+
+#header{
+	text-align: center;
+}
+
+.nav{ /*targets the unordered list in the .header class */
+	position: absolute;
+	border: 2px solid pink;
+	right: 10px;
+	top: 15px;
+
+}
+
+.links li{
+	display: inline-block;
+}
+
+#header a{
+	display: block; /*Makes it so that the whole link area can be clicked on and not just the text. */
+	text-decoration: none; /* gets rid of underline that shows on links */
+	color: black;
+	padding-right: 15px;
+	font-family: 'BenchNine', sans-serif;
+	font-size: 24px;
+}
+
+#header img{
+	padding-top: 3px;
+}
+
+a.active{ /*makes active window bolder to indicate which one you're on*/
+	font-weight: bolder;
+}
+
+
+.timeFrame{
+	font-family: 'Lato', sans-serif;
+	font-size: 12px;
+	color: #838584;
+
+	
+}
+h1{
+	font-family: 'Glegoo', sans-serif;
+	font-size: 30px;
+}
+
+span h1{ /* Underline for Hello or h1. */
+	border-bottom: 2px solid #E93E3E;
+	width: 175px;
+	line-height: 40px;
+	margin-bottom: 10px;
+}
+
+.bigbox{
+	border: 2px solid black;
+	max-height: 600px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 25px;
+}
+
+.littlebox{
+	display: flex;
+	flex-direction: column;
+	width: 60%;
+	border: 2px solid red;
+}
+
+.littlebox ul{ 
+	font-size: 16px;
+	font-family: 'Glegoo', sans-serif;
+	margin: 0px 55px;
+}
+
+.padding{
+	padding-left: 20px;
+}
+.jobTitle{
+	font-family: 'Glegoo', sans-serif;
+	font-size: 24px;
+	padding-top: 0; 
+}
+
+.Name{
+	width:auto;
+	height: auto;
+	font-family: 'BenchNine', sans-serif;
+	font-size: 48px;
+	color: #E93E3E;
+	border: 2px solid yellow;
+}
+
+#footer{
+	font-size: 15px;
+	padding-right: 2px;
+	margin: 0 auto;
+	font-family: 'BenchNine', sans-serif;
+	border: 2px solid pink;
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+
+.discord{
+	border-radius: 50%;
+	width: 60px;
+	height: 60px;
+}
+
+.contactMe {
+	list-style: none;
+}
+
+.contactMe img{
+	
+	height: 50px;
+	width: 50px;
+}
+
+.contactMe li{
+	display: flex;
+	align-items: center;
+	border: 2px solid blue;
+}
+
+
+.form{
+	height: 150px;
+	width: 400px;	
+	margin: auto;
+	text-align: top;
+}
+
+::placeholder{
+	color: #E93E3E;
+	opacity: 65%;
+}
+
+@media (max-width: 960px){
+	 #header a{
+		display: none;
+	}
+
+	#header{
+		display: flex;
+		justify-content: center;
+	}
+
+	.nav{ /*targets the unordered list in the .header class */
+		border: 2px solid pink;
+		top: 22px;
+		position: relative; 
+	}
+
+	#footer{
+		justify-content: center;
+	}
+
+	.littlebox{
+		width: 80%;
+	}
+
+	.form{
+		max-width: 300px;
+	}
+}
