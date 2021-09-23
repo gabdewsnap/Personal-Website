@@ -6,41 +6,25 @@
 	margin: 0;
 }
 
-section{
-	display: flex;
-	justify-content: space-between;
-	width: 100%;
-	max-width: 1250px;
-	height: 100%;
-	margin: 0 auto;
-	align-items: center;
-	position: relative;
-	margin-top: 75px;
+body{
+	background-image: url(../Photos/background-image.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 }
-.spacer{
-	width: 100%;
-	height: 100%;
-	max-height: 100px;
-}
-
 #header{
 	display: flex;
 	align-items: center;
 	justify-content: flex-end; /* y axis */
-	background-color:  white;
-	height: auto;
-	height: 70px;
+	background-color: white;
+	height: 80px;
 	width: 100%;
-	padding-right: 20px; 
-	position: relative; /*Makes is so that it sticks to the top even when scrolling */
+	 /*Makes is so that it sticks to the top even when scrolling */
 }
 
 #header ul{ /*targets the unordered list in the .header class */
-	margin: 0 auto;
-	height: auto;
+	height: 0 auto;
 	display: flex;
-	justify-content:center;
-	align-items: center;
 	width: 100%;
 	max-width: 600px;
 	list-style: none; /* gets rid of the bulleted */
@@ -53,50 +37,56 @@ section{
 	padding-right: 15px;
 	font-family: 'BenchNine', sans-serif;
 	font-size: 24px;
-	position: relative; /* makes it so that kid thingies that are positioned absolute are posistioned 
-						absolute to this one and not the entire web page */
-}
-
-
-#header img{
-	padding-top: 3px;
 }
 
 a.active{ /*makes active window bolder to indicate which one you're on*/
 	font-weight: bolder;
 }
 
-.Name{
-	width:auto;
-	height: auto;
+.Name{	
 	font-family: 'BenchNine', sans-serif;
-	font-size: 48px;
-	color: #E93E3E;
+	font-size: 60px;
+	color: black;
+
 }
+
+section{
+	display: flex;
+	justify-content: space-between;
+	max-width: 1300px;
+	margin: 0 auto;
+	align-items: center;
+	position: relative;
+	margin-top: 175px;
+	margin-bottom:  175px;
+}
+
+
 .aboutMe{
-	height: auto;
+	margin-bottom: 300px;
 	display: flex;
 	text-align: center;
 	flex-direction: column;
 	width: 100%;
-	max-width: 550px;
+	max-width: 575px;
 	height: 150px;
-	padding: 25px;
-
+	
 }
+
 .aboutMe p{
+	margin-top: 25px;
 	text-align: left;
+	width: 600px;
 	font-family: 'Glegoo', sans-serif;
-	font-weight: bold;
-	font-size: 20px;
+	font-size: 25px;
 	z-index: 1; 
-
 }
+
 .aboutMe img{
 	position: absolute;
-	width: 400px;
-	height: 250px;
-	margin-left: -20px;
+	width: 600px;
+	height: 400px;
+	margin-left: -100px;
 }
 
 .aboutMe h1{
@@ -109,7 +99,6 @@ a.active{ /*makes active window bolder to indicate which one you're on*/
 span h1{ /* Underline for Hello or h1. */
 	border-bottom: 2px solid #E93E3E;
 	width: 85px;
-	line-height: 40px;
 	margin-bottom: 10px;
 }
 
@@ -122,11 +111,11 @@ span h1{ /* Underline for Hello or h1. */
 	width: auto;
 	padding: 25px;
 }
+
 .container p{
-	top: -142px;
+	top: -255px;
 	position: absolute;
 }
-
 
 .image{
 	border-radius: 50%;
@@ -136,27 +125,12 @@ span h1{ /* Underline for Hello or h1. */
 	position: relative;
 	z-index: 1;
 	border: 1px solid black;
-
 }
 
-#borderleft{ /*left and right of black border lines */
-	position: absolute;
-	border-left: 1px solid black;
-	border-right: 1px solid black;
-	height: 480px;
-	width: 450px;
+.squareImage{
 	z-index: 0;
-	top: 35px;
-}
-
-#bordertop{ /*top and bottom of black border lines */
 	position: absolute;
-	border-top: 1px solid black;
-	border-bottom: 1px solid black;
-	height: 450px;
-	width: 480px;
-	z-index: 0;
-	top: 50px;
+	margin-bottom: 60px;
 }
 
 #babycircles{
@@ -165,6 +139,7 @@ span h1{ /* Underline for Hello or h1. */
 	width: 300px;
 	margin-top: 5px;
 	align-items: center;
+	transition: transform 1s;
 
 }
 
@@ -179,54 +154,99 @@ span h1{ /* Underline for Hello or h1. */
 	width: 60px;
 	height: 60px;
 }
+
 .twitter{
 	border-radius: 50%;
 	width: 55px;
 	height: 55px;
 }
 
+.hobbies{
+	font-family: 'Glegoo', sans-serif;
+	padding: 50px;
+	width: auto;
+	height: auto;
+	display: block;
+	text-align: center;
+	background-color: white;
+	
+}
 
+.hobbypics{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	margin-left: 75px;
+	margin-right: 75px;
+}
 
-#footer{
-	font-size: 15px;
-	padding-right: 2px;
-	margin: 0 auto;
+.hobbies span{
+	 width: 250px;
+	 font-size: 30px;
+	 text-align: center;
+
+}
+
+.hobbies p{
+	width: 450px;
+	height:  auto;
+
+}
+
+.hobbies img{
+	width: 450px;
+	height: 500px;
+	margin-top:  75px;
+	border: 1px black solid;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+footer{
+	font-size: 20px;
 	font-family: 'BenchNine', sans-serif;
 	width: 100%;
-	display: flex;
-	justify-content: flex-end;
-	align-items: flex-end;
+	display: block;
+	position: relative;
+	background-color: white;
 }
 
-
-@media (max-width: 850px){
-	#header a{
-		display: none;
-	}
-
-	#header{
-		display: flex;
-		justify-content: center;
-	}
-
-	#header img{
-		padding-top: 10px;
-		padding-left: 15px;
-
-	}
-	#footer{
-		justify-content: center;
-	}
-
-	.container p{
-		display:none;
-	}
-
-	.container{
-		padding: 0;
-	}
+footer p{
+	bottom: 0;
+	right: 0;
+ 	position: absolute;
 }
-
 
 @media (max-width: 850px){
 	section{
@@ -248,6 +268,32 @@ span h1{ /* Underline for Hello or h1. */
 
 	#bordertop{ /*top and bottom of black border lines */
 		top: 30px;
+	}
+
+		#header a{
+		display: none;
+	}
+
+	#header{
+		display: flex;
+		justify-content: center;
+	}
+
+	#header img{
+		padding-top: 10px;
+		padding-left: 15px;
+	} 
+
+	footer{
+		text-align: center;
+	}
+
+	.container p{
+		display:none;
+	}
+
+	.container{
+		padding: 0;
 	}
 }
 
@@ -299,4 +345,55 @@ span h1{ /* Underline for Hello or h1. */
 	section{
 		margin-top: 25px;
 	}
+}
+
+.fade-in {
+  animation: fadeIn ease 5s;
+  -webkit-animation: fadeIn ease 5s;
+  -moz-animation: fadeIn ease 5s;
+  -o-animation: fadeIn ease 5s;
+  -ms-animation: fadeIn ease 5s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
 }

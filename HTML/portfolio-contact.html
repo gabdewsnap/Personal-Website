@@ -2,86 +2,87 @@
 
 <html>
 
-<head>
-	<link rel="stylesheet" type="text/css" href="../CSS/ExperienceCSS.css">
-	<link href="https://fonts.googleapis.com/css2?family=Athiti:wght@500&family=BenchNine&family=Glegoo&family=Lato:wght@100&display=swap" rel="stylesheet">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title> Gabrielle's Portfolio</title>
-	<script src="navigation.js"></script>
-</head>
-<body>
-	<div id="header">
+	<head>
+		<link rel="stylesheet" type="text/css" href="../CSS/ExperienceCSS.css">
+		<link href="https://fonts.googleapis.com/css2?family=Athiti:wght@500&family=BenchNine&family=Glegoo&family=Lato:wght@100&display=swap" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title> Gabrielle's Portfolio</title>
+		<script src="navigation.js"></script>
+	</head>
 
-		<div class="Name">
-			<p>Gabrielle LastName</p>
+	<body>
+		<div id="header">
+
+			<div class="Name">
+				<p>Gabrielle Dewsnap</p>
+			</div>
+
+
+			<div class= "nav"> <!-- OR NAV?? -->
+					<ul class="links">
+						<li> <a href="portfolio-home.html"> Home </a> </li>
+
+						<li> <a  href="portfolio-experience.html"> Experience </a> </li>
+
+						<li> <a  href="portfolio-education.html"> Education </a> </li>
+
+						<li> <a class="active" href="portfolio-contact.html"> Contact </a> </li>
+
+					</ul>
+			</div>
 		</div>
 
-		<div class= "nav"> <!-- OR NAV?? -->
-				<ul class="links">
-					<li> <a href="portfolio-home.html"> Home </a> </li>
+		<div class="bigbox">
+			<div class="littlebox" >
+				<span><h1> Contact Me </h1></span>
 
-					<li> <a  href="portfolio-experience.html"> Experience </a> </li>
+				<ul class="contactMe">	
+					<li style="padding-top: 30px;"> 
+						<img style="width: 42px; height: 42px; margin-right: 10px; margin-bottom: 7px;"src="../Photos/phone.png">
+						
+						Phone Number: (904)600-2347
+					</li>
+					<li>
+						<img style="width: 52px; height: 52px; margin-left: -5px; margin-right: 5px;" src="../Photos/email.png">
 
-					<li> <a class="active" href="portfolio-education.html"> Education </a> </li>
+					    Email: gabrielle.dewsnap@yahoo.com
+					</li>				
 
-					<li> <a href="portfolio-contact.html"> Contact </a> </li>
+					<li>	
+						<a href="https://discord.gg/nRT9yhF">	
+							<img class="discord" style="margin-top: 5px; width: 45px; height:45px; margin-right: 7px" src="../Photos/discord.png">
+						</a>
 
-					<li> <img src="../Photos/navlines.png" alt="NavLines"></li>
-				</ul>
+						Discord: gabrielle#3795 
+					</li>
+
+					<li style="padding: 5px">				
+
+						<b>@gabrieldontsnap </b> | Twitter/Instagram/Twitch
+					</li>
+				</ul>	
+
+				<span><h1 style="padding-top: 40px; width: 150px;"> Feedback </h1></span> 
+
+				<div style="padding-left: 50px">
+					<p style="margin-bottom: 5px; padding-top:30px"> Any feedback would be very much appreciated. Thank you!</p>
+					<div>
+						<form>
+							<input type="text" name="full-name" placeholder="Full Name" style="margin-bottom: 15px; border-width: 2px; font-size: 16px; width: 300px;">
+
+							<br>
+
+						 	<input class="form" type="text" name="message" placeholder="Message *Note there is not a database currently set up for this*" style="border-width: 2px; font-size: 16px; text" >
+						</form>
+					</div>
+				 </div>
+			</div>
 		</div>
-	</div>
 
-	<hr>
-	<div class="bigbox">
-		<div class="littlebox" >
-			<span><h1> Contact Me </h1></span>
-
-			<ul class="contactMe">	
-				<li> 
-					<img style="width: 45px; height: 45px;"src="../Photos/phone.png">
-					
-					Phone Number
-				</li>
-				<li>
-					<img style="width: 55px; height: 55px; margin-left: -3px; " src="../Photos/email.png">
-
-					Email
-				</li>				
-
-				<li>					<a href="https://discord.gg/nRT9yhF">	
-						<img class="discord" style="margin-top: 10px;" src="../Photos/discord.png">
-					</a>
-					gabrielle#3795 Discord 
-				</li>
-
-				<li>				
-					<!-- img thing here -->
-
-					<b>@gabrieldontsnap</b> | Twitter/Instagram/Twitch
-				</li>
-			</ul>	
-
-			<span><h1 style="padding-top: 40px;"> Feedback </h1></span> 
-
-			<p> Any feedback would be very much appreciated. Thank you!</p>
-			 <!-- Forms maybe???? -->
-			 <div>
-			 <form>
-				<input type="text" name="full-name" placeholder="Full Name">
-
-				<br>
-
-			 	<input class="form" type="text" name="message" placeholder="Message">
-		
-			 </form>
-			 </div>
-
-		</div>
-	</div>
-
-	<div id="footer">
-		<footer>
-			<p> &copy; Copyright 2020. Gabrielle LastName. All rights reserved.</p>
+		<footer style="	height:215px;">
+			<p> &copy; Copyright 2020. Gabrielle Dewsnap. All rights reserved.</p>
 		</footer>
-	</div>
-</body>
+
+	</body>
+
+</html>

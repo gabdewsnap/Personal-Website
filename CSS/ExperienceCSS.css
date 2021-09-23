@@ -6,16 +6,24 @@
 	margin: 0;
 }
 
+body{
+	background-image: url(../Photos/background-image.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
 #header{
 	text-align: center;
+	background-color: white;
+	
+	height: 80px;
 }
 
 .nav{ /*targets the unordered list in the .header class */
 	position: absolute;
-	border: 2px solid pink;
-	right: 10px;
-	top: 15px;
-
+	right: 5px;
+	top: 25px;
 }
 
 .links li{
@@ -26,13 +34,9 @@
 	display: block; /*Makes it so that the whole link area can be clicked on and not just the text. */
 	text-decoration: none; /* gets rid of underline that shows on links */
 	color: black;
-	padding-right: 15px;
+	padding-right: 5px;
 	font-family: 'BenchNine', sans-serif;
 	font-size: 24px;
-}
-
-#header img{
-	padding-top: 3px;
 }
 
 a.active{ /*makes active window bolder to indicate which one you're on*/
@@ -42,11 +46,14 @@ a.active{ /*makes active window bolder to indicate which one you're on*/
 
 .timeFrame{
 	font-family: 'Lato', sans-serif;
-	font-size: 12px;
+	font-size: 14px;
 	color: #838584;
-
-	
+	font-weight: bolder;
+	height: 10px;
+	margin-top: 30px;
 }
+
+
 h1{
 	font-family: 'Glegoo', sans-serif;
 	font-size: 30px;
@@ -60,19 +67,19 @@ span h1{ /* Underline for Hello or h1. */
 }
 
 .bigbox{
-	border: 2px solid black;
-	max-height: 600px;
+	//border: 2px solid black;
 	display: flex;
 	justify-content: center;
-	align-items: center;
 	margin-top: 25px;
+	height: auto;
 }
+
 
 .littlebox{
 	display: flex;
 	flex-direction: column;
-	width: 60%;
-	border: 2px solid red;
+	width: 80%;
+	//border: 2px solid red;
 }
 
 .littlebox ul{ 
@@ -81,9 +88,6 @@ span h1{ /* Underline for Hello or h1. */
 	margin: 0px 55px;
 }
 
-.padding{
-	padding-left: 20px;
-}
 .jobTitle{
 	font-family: 'Glegoo', sans-serif;
 	font-size: 24px;
@@ -94,21 +98,24 @@ span h1{ /* Underline for Hello or h1. */
 	width:auto;
 	height: auto;
 	font-family: 'BenchNine', sans-serif;
-	font-size: 48px;
-	color: #E93E3E;
-	border: 2px solid yellow;
+	font-size: 60px;
+	//color: #E93E3E;
+	color: black;
+	//border: 2px solid yellow;
 }
 
-#footer{
-	font-size: 15px;
-	padding-right: 2px;
-	margin: 0 auto;
+footer{
+	font-size: 20px;
 	font-family: 'BenchNine', sans-serif;
-	border: 2px solid pink;
 	width: 100%;
-	display: flex;
-	justify-content: flex-end;
-	align-items: flex-end;
+	display: block;
+	position: relative;
+}
+
+footer p{
+	bottom: 0;
+	right: 0;
+ 	position: absolute;
 }
 
 .discord{
@@ -130,20 +137,23 @@ span h1{ /* Underline for Hello or h1. */
 .contactMe li{
 	display: flex;
 	align-items: center;
-	border: 2px solid blue;
+	//border: 2px solid blue;
 }
 
 
 .form{
 	height: 150px;
-	width: 400px;	
-	margin: auto;
-	text-align: top;
+	width: 500px;	
+}
+
+input{
+	padding: 5px;
 }
 
 ::placeholder{
 	color: #E93E3E;
 	opacity: 65%;
+	font-weight: bolder;
 }
 
 @media (max-width: 960px){
@@ -157,13 +167,14 @@ span h1{ /* Underline for Hello or h1. */
 	}
 
 	.nav{ /*targets the unordered list in the .header class */
-		border: 2px solid pink;
+		//border: 2px solid pink;
 		top: 22px;
 		position: relative; 
 	}
 
-	#footer{
-		justify-content: center;
+	footer{
+		text-align: center;
+		text-size:  px;
 	}
 
 	.littlebox{
